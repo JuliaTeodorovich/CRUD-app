@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>CRUD-app</title>
+  </head>
+  <body>
+    <main>
+      <div class="btn-back"></div>
+      <div class="container front">
+        <h1>Create a customer</h1>
+        <button id="btn-create">+</button>
+        <button id="btn-show">Show all customers</button>
+      </div>
+      <div class="container cards"></div>
+      <div class="container form">
+        <form id="form">
+          <h2 id="registration">Registration</h2>
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter username (e.g. 'John Smith')"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="age">Age</label>
+            <input
+              type="text"
+              id="age"
+              placeholder="Enter age (e.g. '1-120')"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter email (e.g. 'some@gmail.com')"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="tel">Phone number</label>
+            <input
+              type="text"
+              id="tel"
+              placeholder="Enter phone number (e.g. '+380501111111')"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="card">Credit card</label>
+            <input
+              type="text"
+              id="card"
+              placeholder="Enter card number (e.g. '4444 4444 4444 4444')"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="repassword">Confirm password</label>
+            <input
+              type="password"
+              id="repassword"
+              placeholder="Enter password again"
+            />
+            <small>Error message</small>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
