@@ -34,6 +34,7 @@ let valueCard;
 let valuePassword;
 let valueRePassword;
 let id;
+console.log(id);
 
 const value = localStorage.getItem('getUser');
 let list = value ? JSON.parse(value) : [];
