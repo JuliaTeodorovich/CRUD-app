@@ -97,7 +97,6 @@ $form.addEventListener('submit', function (event) {
             $containerCards.style.display = 'flex';
             $btnShowCustomers.style.display = 'none';
             $btnBack.style.display = 'block';
-            getUser();
         } else list.push({ id: id, name: valueUsername, age: valueAge, email: valueEmail, tel: valueTel, card: valueCard, password: valuePassword, rePassword: valueRePassword });
         localStorage.setItem('getUser', JSON.stringify(list));
         $containerCards.style.display = 'flex';
