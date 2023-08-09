@@ -35,6 +35,7 @@ let valuePassword;
 let valueRePassword;
 let id;
 console.log(id);
+console.log(valueAge);
 
 const value = localStorage.getItem('getUser');
 let list = value ? JSON.parse(value) : [];
