@@ -1,221 +1,221 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Quicksand", sans-serif;
-    background-color: lightgray;
-    color: #2f4f4f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: lightgray;
+  color: #2f4f4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-    font-size: 50px;
+  font-size: 45px;
 }
 
 #btn-create {
-    cursor: pointer;
-    width: 80px;
-    border-radius: 20%;
-    border: none;
-    font-size: 40px;
-    color: #2f4f4f;
-    &:hover {
-        opacity: 0.7;
-    }
+  cursor: pointer;
+  width: 80px;
+  border-radius: 20%;
+  border: none;
+  font-size: 40px;
+  color: #2f4f4f;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 #btn-show {
-    cursor: pointer;
-    width: 180px;
-    border-radius: 10px;
-    border: 2px solid #2f4f4f;
-    font-size: 20px;
-    color: #2f4f4f;
-    margin-top: 30px;
-    padding: 5px;
-    &:hover {
-        opacity: 0.7;
-    }
+  cursor: pointer;
+  width: 180px;
+  border-radius: 10px;
+  border: 2px solid #2f4f4f;
+  font-size: 20px;
+  color: #2f4f4f;
+  margin-top: 30px;
+  padding: 5px;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .form,
 .cards {
-    background-color: white;
-    margin: 30px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    padding: 24px 40px;
+  background-color: white;
+  margin: 30px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 24px 40px;
 }
 
 .form {
-    width: 405px;
+  width: 405px;
 }
 
 h2 {
-    text-align: center;
-    margin: 0 0 15px;
+  text-align: center;
+  margin: 0 0 15px;
 }
 
 .btn-back {
-    cursor: pointer;
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:before,
+  &:after {
+    content: "";
     position: absolute;
-    right: 50px;
-    top: 50px;
-    &:hover {
-        opacity: 0.7;
-    }
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        width: 22px;
-        height: 3px;
-        background: #2f4f4f;
-    }
-    &:before {
-        transform: rotate(45deg);
-    }
-    &:after {
-        transform: rotate(-45deg);
-    }
+    width: 22px;
+    height: 3px;
+    background: #2f4f4f;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
 }
 
 .form-control {
-    padding-bottom: 12px;
-    margin-bottom: 8px;
-    position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  position: relative;
 }
 
 .form-control label {
-    color: #2f4f4f;
-    display: block;
-    margin-bottom: 5px;
+  color: #2f4f4f;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .form-control input {
-    font-family: "Quicksand", sans-serif;
-    border: 2px solid #9fc6c6;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-    padding: 9px;
-    font-size: 14px;
-    &:focus {
-        outline: none;
-        border-color: #777;
-    }
-    &::placeholder {
-        color: #cfe2e2;
-    }
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid #9fc6c6;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 9px;
+  font-size: 14px;
+  &:focus {
+    outline: none;
+    border-color: #777;
+  }
+  &::placeholder {
+    color: #cfe2e2;
+  }
 }
 
 .form-control.success input {
-    border-color: green;
+  border-color: green;
 }
 
 .form-control.error input {
-    border-color: red;
+  border-color: red;
 }
 
 .form-control small {
-    font-family: "Quicksand", sans-serif;
-    color: red;
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    visibility: hidden;
+  font-family: "Quicksand", sans-serif;
+  color: red;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  visibility: hidden;
 }
 
 .form-control.error small {
-    visibility: visible;
+  visibility: visible;
 }
 
 .form button {
-    font-family: "Quicksand", sans-serif;
-    display: block;
-    font-size: 16px;
-    background-color: #2f4f4f;
-    border: 2px solid #2f4f4f;
-    border-radius: 4px;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
-    cursor: pointer;
-    &:hover {
-        opacity: 0.7;
-    }
+  font-family: "Quicksand", sans-serif;
+  display: block;
+  font-size: 16px;
+  background-color: #2f4f4f;
+  border: 2px solid #2f4f4f;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .cards {
-    padding: 15px;
-    display: flex;
-    width: auto;
-    justify-content: center;
-    flex-wrap: wrap;
+  padding: 15px;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 180px;
-    background: #c2d6d6;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background: #c2d6d6;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-btn {
-    font-family: "Quicksand", sans-serif;
-    cursor: pointer;
-    margin: 5px;
-    width: 74px;
-    color: #2f4f4f;
-    border: 1px solid #2f4f4f;
-    border-radius: 4px;
-    padding: 2px;
-    &:hover {
-        opacity: 0.7;
-    }
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  margin: 5px;
+  width: 74px;
+  color: #2f4f4f;
+  border: 1px solid #2f4f4f;
+  border-radius: 4px;
+  padding: 2px;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .close {
-    cursor: pointer;
-    content: "<";
-    align-self: flex-start;
+  cursor: pointer;
+  content: "<";
+  align-self: flex-start;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #2f4f4f;
+  border-left: 2px solid #2f4f4f;
+  transform: rotate(-45deg);
+  &::after {
+    content: "";
     display: block;
-    width: 12px;
-    height: 12px;
-    border-top: 2px solid #2f4f4f;
-    border-left: 2px solid #2f4f4f;
-    transform: rotate(-45deg);
-    &::after {
-        content: "";
-        display: block;
-        width: 2px;
-        height: 21px;
-    }
-    &:hover {
-        opacity: 0.7;
-    }
+    width: 2px;
+    height: 21px;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
 }
